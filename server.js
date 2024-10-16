@@ -7,10 +7,11 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import cookieParser from 'cookie-parser';
 
-// import { mongoDbConnection } from "./config/mongoDb.js";
+import { mongoDbConnection } from "./config/mongoDb.js";
 
 // import productRouter from "./routes/product.js"; 
 // import categoryRouter from "./routes/category.js"; 
+
 
 
 // enviroment variable
@@ -48,27 +49,7 @@ app.use(cookieParser());
 
 // listen server
 app.listen(PORT, () => {
-  // mongoDbConnection(),
+  mongoDbConnection(),
   console.log(` Server is running on port ${PORT}`.bgGreen.black);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
