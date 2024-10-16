@@ -10,8 +10,7 @@ import cookieParser from 'cookie-parser';
 import { mongoDbConnection } from "./config/mongoDb.js";
 
 // import productRouter from "./routes/product.js"; 
-// import categoryRouter from "./routes/category.js"; 
-
+ import categoryRouter from "./routes/category.js"; 
 
 
 // enviroment variable
@@ -44,7 +43,7 @@ app.use(cookieParser());
 
 // routes 
 // app.use("/api/v1/product", productRouter);  
-// app.use("/api/v1/category", categoryRouter);  
+ app.use("/api/v1/category", categoryRouter);  
 
 
 // listen server
