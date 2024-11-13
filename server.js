@@ -12,6 +12,7 @@ import { mongoDbConnection } from "./config/mongoDb.js";
 // import productRouter from "./routes/product.js"; 
  import categoryRouter from "./routes/category.js"; 
  import userRouter from "./routes/user.js"; 
+ import messageRouter from "./routes/message.js"; 
 
 
 // enviroment variable
@@ -46,6 +47,7 @@ app.use(cookieParser());
 // app.use("/api/v1/product", productRouter);  
  app.use("/api/v1/category", categoryRouter);  
  app.use("/api/v1/user", userRouter);  
+ app.use("/api/v1/message", messageRouter);  
 
 
 // listen server
